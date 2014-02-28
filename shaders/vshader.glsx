@@ -1,0 +1,13 @@
+#version 400
+
+layout(location = 0) in vec3 vp;
+layout(location = 1) in vec3 vn;
+
+uniform mat4 transform;
+
+out vec3 vn_out;
+
+void main() {
+	vn_out = vn;
+	gl_Position =  transform * vec4(vp, 1.0);
+}
