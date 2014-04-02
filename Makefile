@@ -1,13 +1,13 @@
 client_objects = \
-					src/main.o \
-					src/network.o \
-					src/util.o \
-					src/D3DObject.o\
+	src/main.o \
+	src/network.o \
+	src/util.o \
+	src/D3DObject.o\
 
 client_flags = -lglfw3 -lglew -lassimp -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo
 
 server_objects = \
-					src/mserver/main.cpp
+	src/mserver/main.cpp
 
 server_flags =
 
