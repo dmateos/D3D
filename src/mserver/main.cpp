@@ -105,6 +105,8 @@ int main(int argc, char **argv) {
 	bind(sockfd, (struct sockaddr*)&servaddr, sizeof(servaddr));
 	listen(sockfd, 1024);
 
+  printf("server is running\n");
+
 	while(true) {
 		struct sockaddr_in client_addr;
 		socklen_t client_addr_length;
